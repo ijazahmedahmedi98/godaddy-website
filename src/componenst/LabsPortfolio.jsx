@@ -1,6 +1,6 @@
 export const LabsPortfolio = () => (
-  <section className="bg-black text-white rounded-t-3xl p-12">
-    <h2 className="text-center text-lg font-semibold mb-6">
+  <section className="bg-black text-white rounded-t-3xl p-12 pl-30">
+    <h2 className="text-center text-2xl font-semibold mb-18">
       TOP Labs portfolio
     </h2>
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
@@ -49,10 +49,12 @@ export const LabsPortfolio = () => (
       },{
         n:"Playgama",d:"HTML5 gaming platform"
       }].map(i=>(
-        <div key={i.n}>
+        <div key={i.n} className="w-55 flex gap-3">
           <div className="w-6 h-6 bg-white rounded mb-1" />
-          <h4 className="font-semibold">{i.n}</h4>
+          <div>
+            <h4 className="font-semibold">{i.n}</h4>
           <p className="text-gray-400">{i.d}</p>
+          </div>
         </div>
       ))}
     </div>

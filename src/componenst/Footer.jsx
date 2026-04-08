@@ -32,7 +32,7 @@ export const Footer = () => (
       </div>
 
 
-      <div className="flex  md:w-[40%] md:justify-between mt-8 md:mt-0">
+      <div className="flex  md:w-[30%] md:justify-between mt-8 md:mt-0">
         
         <div>
           <h4 className="font-semibold mb-2">Features</h4>
@@ -42,7 +42,7 @@ export const Footer = () => (
         </div>
 
         <div>
-          <h4 className="font-semibold mb-2">Product</h4>
+          <h4 className="font-semibold mb-2 mr-20">Product</h4>
           {["Pricing","Early access"].map(i => (
             <p key={i} className="text-gray-300">{i}</p>
           ))}
